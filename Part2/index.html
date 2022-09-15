@@ -16,6 +16,26 @@
       margin: 10px auto;
     }
 
+    table td {
+      padding-right: 15px;
+      border: 1px solid black;
+      text-align: left;
+     
+    }
+    table th {
+      padding-right: 15px;
+      font-size: 20px;
+      
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+    
+    body {
+      margin: 10px;
+    }
+
   </style>
 </head>
 
@@ -23,10 +43,19 @@
   <h1>Movies</h1>
   <form id="movie-form">
     <input id="title" type="text" placeholder="Title">
-    <input id="rating" type="text" placeholder="Rating">
-    <button id type = "submit">Submit</button>
-
+    <input id="rating" type="number" placeholder="Rating 0-10" min="0" max="10">
+    <button id="sBtn" type = "submit">Submit</button>
+    <br>
+    
   </form>
+  <br>
+  <table id="movie-container">
+    <tr id="header">
+      <th>Title</th>
+      <th>Rating</th>
+    </tr>
+
+  </table>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="app.js"></script>
 </body>
